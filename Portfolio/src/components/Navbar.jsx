@@ -28,14 +28,20 @@ const Navbar = () => {
 
   return (
     <div className="top-0 sm:h-42 bg-white dark:bg-dark flex-col">
-      <div className="flex space-x-10 justify-center items-center text-center pt-7">
-        <div className="mr-48 dark:bg-accent dark:hover:bg-secondary dark:text-light dark:hover:text-white bg-secondary hover:bg-accent text-white hover:text-light duration-300 rounded-full p-3 justify-center items-center text-center flex">
-          <button onClick={switchTheme}>
-            {theme ? <BsMoonFill size={20} /> : <BsSunFill size={20} />}
+      <div className="flex space-x-10 justify-center items-center text-center pt-12 sm:pt-7 pb-7">
+        <div className="sm:mr-72 dark:bg-accent dark:hover:bg-secondary dark:text-light dark:hover:text-white bg-white hover:bg-light hover:border-dark border-secondary border-[1px] dark:border-[0px] text-dark hover:text-black duration-500 rounded-full">
+          <button
+            onClick={switchTheme}
+            className="p-3 justify-center items-center text-center flex space-x-2"
+          >
+            <h1 className="text-sm hidden dark:block">Dark</h1>
+            <BsMoonFill className="text-sm hidden dark:block" />
+            <h1 className="text-sm block dark:hidden">Light</h1>
+            <BsSunFill className="text-sm block dark:hidden" />
           </button>
         </div>
         <a
-          className="hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
+          className="hidden sm:block hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
           href="#about"
         >
           <h1 className="text-sm text-black dark:text-white duration-500">
@@ -43,7 +49,7 @@ const Navbar = () => {
           </h1>
         </a>
         <a
-          className="hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
+          className="hidden sm:block hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
           href="#about"
         >
           <h1 className="text-sm text-black dark:text-white  duration-500">
@@ -51,7 +57,7 @@ const Navbar = () => {
           </h1>
         </a>
         <a
-          className="hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
+          className="hidden sm:block hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
           href="#about"
         >
           <h1 className="text-sm text-black dark:text-white  duration-500">
@@ -59,15 +65,15 @@ const Navbar = () => {
           </h1>
         </a>
         <a
-          className="hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
+          className="hidden sm:block hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
           href="#about"
         >
           <h1 className="text-sm text-black dark:text-white  duration-500">
-            Other
+            More
           </h1>
         </a>
 
-        <div className="flex space-x-5 pl-48">
+        <div className="space-x-5 pl-48 hidden sm:flex">
           <a
             href="https://github.com/tommenbro"
             rel="noreferrer"
