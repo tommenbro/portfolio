@@ -6,7 +6,7 @@ import Button2 from "./Button2";
 
 const Hero = () => {
   return (
-    <div className="items-center justify-center text-center flex pt-12 sm:pt-24">
+    <div className="items-center justify-center text-center flex mt-12 sm:mt-24">
       <TypeWriter />
       <div className="sm:hidden flex mt-96 absolute items-center justify-center text-center space-x-5">
         <Button />

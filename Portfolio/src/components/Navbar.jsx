@@ -27,7 +27,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="top-0 sm:h-42 bg-white dark:bg-dark flex-col">
+    <div className="top-0 sm:h-42 bg-white dark:bg-dark flex-col sm:h-[100px] w-full">
       <div className="flex space-x-10 justify-center items-center text-center pt-12 sm:pt-7 pb-7">
         <div className="sm:mr-72 dark:bg-accent dark:hover:bg-secondary dark:text-light dark:hover:text-white bg-white hover:bg-light hover:border-dark border-secondary border-[1px] dark:border-[0px] text-dark hover:text-black duration-500 rounded-full">
           <button
@@ -50,7 +50,7 @@ const Navbar = () => {
         </a>
         <a
           className="hidden sm:block hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
-          href="#about"
+          href="#dev"
         >
           <h1 className="text-sm text-black dark:text-white  duration-500">
             Development
@@ -58,7 +58,7 @@ const Navbar = () => {
         </a>
         <a
           className="hidden sm:block hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
-          href="#about"
+          href="#exp"
         >
           <h1 className="text-sm text-black dark:text-white  duration-500">
             Experience
@@ -66,7 +66,7 @@ const Navbar = () => {
         </a>
         <a
           className="hidden sm:block hover:bg-light dark:bg-dark dark:hover:bg-accent hover:cursor-pointer hover:shadow-sm duration-500 px-3 py-2 rounded-lg"
-          href="#about"
+          href="#more"
         >
           <h1 className="text-sm text-black dark:text-white  duration-500">
             More
